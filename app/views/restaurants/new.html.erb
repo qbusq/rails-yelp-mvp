@@ -13,8 +13,9 @@
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :phone_number %>
-  <%= f.input :category %>
-  <%= f.submit "Add a restaurant", class: "btn btn-primary" %>
+  <%= f.label :category %>
+  <%= f.select :category, Restaurant::CAT %>
+  <p><%= f.submit "Add a restaurant", class: "btn btn-primary" %></p>
 
 <% end %>
 
